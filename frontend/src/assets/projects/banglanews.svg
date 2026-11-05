@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g)"/>
+  <circle cx="1120" cy="140" r="230" fill="#ffffff" opacity="0.06"/>
+  <circle cx="160" cy="640" r="250" fill="#ffffff" opacity="0.05"/>
+  <circle cx="640" cy="-40" r="140" fill="#38bdf8" opacity="0.12"/>
+  <text x="90" y="330" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" fill="#ffffff">Bangla News 24</text>
+  <text x="90" y="410" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500" fill="#e2e8f0">Responsive online news portal</text>
+  <text x="90" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff" opacity="0.85">Next.js · TypeScript · Tailwind CSS</text>
+  <text x="1190" y="690" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff" opacity="0.6" text-anchor="end">Md Arif Hossin</text>
+</svg>

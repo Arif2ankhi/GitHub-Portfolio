@@ -140,7 +140,19 @@ const ProjectDetails = () => {
                 className="inline-flex items-center gap-2 bg-gray-900 hover:bg-black text-white px-6 py-3 rounded-xl font-semibold shadow-sm hover:shadow transition"
               >
                 <FaGithub className="text-lg" />
-                <span>Source Code</span>
+                <span>Client Code</span>
+              </a>
+            )}
+
+            {project.backend && (
+              <a
+                href={project.backend}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-xl font-semibold shadow-sm hover:shadow transition"
+              >
+                <FaGithub className="text-lg" />
+                <span>Server Code</span>
               </a>
             )}
 

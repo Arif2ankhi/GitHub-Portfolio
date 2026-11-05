@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { HiDocumentText, HiArrowRight, HiSparkles } from "react-icons/hi";
-import { FaReact, FaJsSquare, FaGitAlt } from "react-icons/fa";
-import { SiTailwindcss, SiVite } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiMongodb, SiExpress } from "react-icons/si";
+import { FaNodeJs, FaGitAlt } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -19,29 +19,30 @@ const Hero = () => {
           {/* Status Badge */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-blue-700 text-xs sm:text-sm font-semibold shadow-xs">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>Available for Hire • Fresher Web Developer</span>
+            <span>Available for hire • Full-Stack Web Developer</span>
           </div>
 
           {/* Heading */}
           <div className="space-y-2">
             <p className="text-gray-600 font-medium text-lg">
-              Hello, I am a passionate
+              Hi, I'm <span className="font-bold text-gray-900">Md Arif Hossin</span> — a London-based
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-tight">
-              Frontend &amp;{" "}
+              Full-Stack{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500">
-                React Developer
+                Web Developer
               </span>
             </h1>
           </div>
 
           {/* Description */}
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl leading-relaxed">
-            I craft clean, fast, and responsive modern web applications with{" "}
-            <span className="text-gray-900 font-semibold">React.js</span>,{" "}
-            <span className="text-gray-900 font-semibold">JavaScript (ES6+)</span>, and{" "}
-            <span className="text-gray-900 font-semibold">Tailwind CSS</span>.
-            Dedicated to writing maintainable code and bringing intuitive user experiences to life.
+            I build complete, deployable products with{" "}
+            <span className="text-gray-900 font-semibold">Next.js</span>,{" "}
+            <span className="text-gray-900 font-semibold">TypeScript</span>,{" "}
+            <span className="text-gray-900 font-semibold">Node.js / Express</span>, and{" "}
+            <span className="text-gray-900 font-semibold">MongoDB</span> — auth included.
+            Five years as an enterprise IT engineer at Shell &amp; BP taught me reliability under pressure; now I ship that reliability as code.
           </p>
 
           {/* Action Buttons (Resume prominently featured) */}
@@ -80,16 +81,22 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-100/90 text-gray-800 font-medium border border-gray-200">
-                <FaReact className="text-cyan-500 text-base" /> React.js
+                <SiNextdotjs className="text-gray-900 text-base" /> Next.js
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-100/90 text-gray-800 font-medium border border-gray-200">
-                <FaJsSquare className="text-yellow-500 text-base" /> JavaScript (ES6+)
+                <SiTypescript className="text-blue-500 text-base" /> TypeScript
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-100/90 text-gray-800 font-medium border border-gray-200">
+                <FaNodeJs className="text-emerald-500 text-base" /> Node.js
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-100/90 text-gray-800 font-medium border border-gray-200">
+                <SiExpress className="text-gray-600 text-base" /> Express
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-100/90 text-gray-800 font-medium border border-gray-200">
+                <SiMongodb className="text-emerald-600 text-base" /> MongoDB
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-100/90 text-gray-800 font-medium border border-gray-200">
                 <SiTailwindcss className="text-teal-500 text-base" /> Tailwind CSS
-              </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-100/90 text-gray-800 font-medium border border-gray-200">
-                <SiVite className="text-purple-500 text-base" /> Vite
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-100/90 text-gray-800 font-medium border border-gray-200">
                 <FaGitAlt className="text-orange-500 text-base" /> Git &amp; GitHub
@@ -109,7 +116,7 @@ const Hero = () => {
                 <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
               </div>
-              <span className="text-xs text-gray-400 font-mono">DeveloperProfile.jsx</span>
+              <span className="text-xs text-gray-400 font-mono">arif-hossin.js</span>
               <div className="w-12"></div>
             </div>
 
@@ -120,36 +127,40 @@ const Hero = () => {
                 <span className="text-blue-400">developer</span> = &#123;
               </p>
               <p className="pl-4">
+                <span className="text-gray-400">name:</span>{" "}
+                <span className="text-emerald-400">"Md Arif Hossin"</span>,
+              </p>
+              <p className="pl-4">
                 <span className="text-gray-400">role:</span>{" "}
-                <span className="text-emerald-400">"Fresher Web Developer"</span>,
+                <span className="text-emerald-400">"Full-Stack Web Developer"</span>,
               </p>
               <p className="pl-4">
-                <span className="text-gray-400">focus:</span>{" "}
-                <span className="text-emerald-400">"React &amp; Modern Frontend"</span>,
+                <span className="text-gray-400">location:</span>{" "}
+                <span className="text-emerald-400">"London, UK"</span>,
               </p>
               <p className="pl-4">
-                <span className="text-gray-400">skills:</span> [
+                <span className="text-gray-400">stack:</span> [
               </p>
               <p className="pl-8 text-yellow-300">
-                "JavaScript", "React", "Tailwind", "REST APIs"
+                "Next.js", "TypeScript", "Express", "MongoDB"
               </p>
               <p className="pl-4">],</p>
               <p className="pl-4">
+                <span className="text-gray-400">currentlyLearning:</span>{" "}
+                <span className="text-emerald-400">"AI Agents"</span>,
+              </p>
+              <p className="pl-4">
+                <span className="text-gray-400">past:</span>{" "}
+                <span className="text-emerald-400">"5 yrs IT Engineer @ Shell &amp; BP"</span>,
+              </p>
+              <p className="pl-4">
                 <span className="text-gray-400">status:</span>{" "}
-                <span className="text-emerald-400">"Available Immediately"</span>,
-              </p>
-              <p className="pl-4">
-                <span className="text-gray-400">fastLearner:</span>{" "}
-                <span className="text-blue-400">true</span>,
-              </p>
-              <p className="pl-4">
-                <span className="text-gray-400">codeQuality:</span>{" "}
-                <span className="text-emerald-400">"Clean &amp; Component-Driven"</span>
+                <span className="text-blue-400">true</span>, <span className="text-gray-500">// open to work</span>
               </p>
               <p>&#125;;</p>
 
               <div className="mt-4 pt-3 border-t border-gray-800 text-xs text-gray-500">
-                <span className="text-emerald-400">&#10003;</span> Ready for entry-level challenges
+                <span className="text-emerald-400">&#10003;</span> Live projects on Vercel
               </div>
             </div>
           </div>
@@ -157,17 +168,17 @@ const Hero = () => {
           {/* Floating Pill Badges */}
           <div className="absolute -bottom-4 -left-4 bg-white/95 backdrop-blur-md border border-gray-200 rounded-xl p-3 shadow-lg flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-lg">
-              3+
+              6+
             </div>
             <div>
-              <p className="text-xs font-bold text-gray-900">Featured Projects</p>
-              <p className="text-[11px] text-gray-500">Ready to explore</p>
+              <p className="text-xs font-bold text-gray-900">Live Projects</p>
+              <p className="text-[11px] text-gray-500">Deployed on Vercel</p>
             </div>
           </div>
 
           <div className="absolute -top-4 -right-4 bg-white/95 backdrop-blur-md border border-gray-200 rounded-xl p-3 shadow-lg flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-            <p className="text-xs font-bold text-gray-900">100% Responsive</p>
+            <p className="text-xs font-bold text-gray-900">Full-Stack • Front to Back</p>
           </div>
         </div>
       </div>

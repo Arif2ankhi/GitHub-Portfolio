@@ -64,10 +64,10 @@ const Navbar = () => {
           className="text-2xl font-extrabold tracking-tight text-gray-900 group flex items-center gap-2"
         >
           <span className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white font-mono text-lg shadow-md shadow-blue-500/25 group-hover:scale-105 transition-transform">
-            D
+            A
           </span>
           <span className="bg-gradient-to-r from-gray-900 via-blue-900 to-blue-600 bg-clip-text text-transparent">
-            DevPortfolio<span className="text-blue-600">.</span>
+            Arif<span className="text-blue-600">.</span>
           </span>
         </Link>
 

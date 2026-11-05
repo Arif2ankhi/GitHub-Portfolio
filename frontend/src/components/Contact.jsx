@@ -6,7 +6,7 @@ import {
   HiOutlineChatAlt2,
   HiOutlineCheckCircle,
 } from "react-icons/hi";
-import { FaGithub, FaLinkedin, FaTwitter, FaPaperPlane } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaPaperPlane } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -41,16 +41,20 @@ const Contact = () => {
 
     setStatus({ submitting: true, submitted: false, error: null });
 
-    // Simulate sending message
-    setTimeout(() => {
-      setStatus({ submitting: false, submitted: true, error: null });
-      setFormData({ name: "", email: "", subject: "", message: "" });
+    // Opens the visitor's email client with the message pre-filled
+    const subject = encodeURIComponent(formData.subject || "Portfolio Contact");
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
+    );
+    window.location.href = `mailto:arif2ankhi@gmail.com?subject=${subject}&body=${body}`;
 
-      // Auto-hide success message after 6 seconds
-      setTimeout(() => {
-        setStatus((prev) => ({ ...prev, submitted: false }));
-      }, 6000);
-    }, 1000);
+    setStatus({ submitting: false, submitted: true, error: null });
+    setFormData({ name: "", email: "", subject: "", message: "" });
+
+    // Auto-hide success message after 6 seconds
+    setTimeout(() => {
+      setStatus((prev) => ({ ...prev, submitted: false }));
+    }, 6000);
   };
 
   return (
@@ -67,7 +71,7 @@ const Contact = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-gray-600">
-          Have an entry-level opening, internship, freelance project, or simply want to chat about tech? My inbox is always open.
+          Have a junior developer opening, a freelance build, or want to talk shop about Next.js and AI agents? My inbox is always open.
         </p>
       </div>
 
@@ -79,13 +83,13 @@ const Contact = () => {
               Contact Information
             </h3>
             <p className="text-sm text-gray-600 leading-relaxed">
-              I am actively looking for full-time junior frontend or full-stack opportunities and am available to join immediately.
+              I'm open to full-time junior full-stack or frontend roles in London or remote — and available to talk anytime.
             </p>
 
             <div className="space-y-4 pt-2">
               {/* Email */}
               <a
-                href="mailto:youremail@example.com"
+                href="mailto:arif2ankhi@gmail.com"
                 className="flex items-start gap-4 p-3.5 rounded-xl bg-gray-50 hover:bg-blue-50/70 border border-gray-100 hover:border-blue-200 transition group"
               >
                 <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -96,14 +100,14 @@ const Contact = () => {
                     Email Address
                   </span>
                   <span className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                    youremail@example.com
+                    arif2ankhi@gmail.com
                   </span>
                 </div>
               </a>
 
               {/* Phone */}
               <a
-                href="tel:+8801700000000"
+                href="tel:+447576289960"
                 className="flex items-start gap-4 p-3.5 rounded-xl bg-gray-50 hover:bg-blue-50/70 border border-gray-100 hover:border-blue-200 transition group"
               >
                 <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -111,10 +115,10 @@ const Contact = () => {
                 </div>
                 <div>
                   <span className="text-xs text-gray-500 font-medium block">
-                    Phone / WhatsApp
+                    Phone
                   </span>
                   <span className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                    +880 1700-000000
+                    07576 289960
                   </span>
                 </div>
               </a>
@@ -129,7 +133,7 @@ const Contact = () => {
                     Location
                   </span>
                   <span className="text-sm font-semibold text-gray-900">
-                    Dhaka, Bangladesh (Remote / On-site)
+                    London, United Kingdom (On-site / Hybrid / Remote)
                   </span>
                 </div>
               </div>
@@ -142,7 +146,7 @@ const Contact = () => {
               </span>
               <div className="flex items-center gap-3">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/Arif2ankhi"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub Profile"
@@ -151,7 +155,7 @@ const Contact = () => {
                   <FaGithub className="text-lg" />
                 </a>
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/in/md-arif-hossin-9086a239/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn Profile"
@@ -160,13 +164,13 @@ const Contact = () => {
                   <FaLinkedin className="text-lg" />
                 </a>
                 <a
-                  href="https://twitter.com/"
+                  href="mailto:arif2ankhi@gmail.com"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="Twitter Profile"
-                  className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-sky-500 hover:text-white flex items-center justify-center text-gray-700 transition"
+                  aria-label="Send Email"
+                  className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-rose-500 hover:text-white flex items-center justify-center text-gray-700 transition"
                 >
-                  <FaTwitter className="text-lg" />
+                  <HiOutlineMail className="text-lg" />
                 </a>
               </div>
             </div>
@@ -188,9 +192,9 @@ const Contact = () => {
               <div className="mb-6 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center gap-3">
                 <HiOutlineCheckCircle className="text-2xl text-emerald-600 shrink-0" />
                 <div>
-                  <p className="text-sm font-bold">Message sent successfully!</p>
+                  <p className="text-sm font-bold">Opening your email client…</p>
                   <p className="text-xs text-emerald-700">
-                    Thank you for reaching out. I'll get back to you shortly.
+                    Your message is pre-filled — just hit send in your mail app. I'll get back to you shortly.
                   </p>
                 </div>
               </div>

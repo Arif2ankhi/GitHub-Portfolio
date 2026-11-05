@@ -9,62 +9,61 @@ import { FaGraduationCap, FaCertificate } from "react-icons/fa";
 
 const educationHistory = [
   {
-    degree: "B.Sc. in Computer Science & Engineering (CSE)",
-    institution: "Your University / College Name",
-    location: "Dhaka, Bangladesh",
-    period: "2022 – 2026 (Expected)",
-    grade: "CGPA: 3.50+ / 4.00",
+    degree: "MBA — Master of Business Administration",
+    institution: "University of Sunderland",
+    location: "United Kingdom",
+    period: "Completed",
+    grade: "UK Postgraduate Degree",
     description:
-      "Gained comprehensive theoretical and practical knowledge in computational thinking, software engineering, and web technologies.",
+      "Business, management and communication grounding — valuable for translating between technical teams and commercial stakeholders.",
     coursework: [
-      "Data Structures & Algorithms",
-      "Object-Oriented Programming (Java/C++)",
-      "Database Management Systems (DBMS)",
-      "Web Technologies & Engineering",
-      "Operating Systems & Computer Networks",
-      "Software Design Patterns",
+      "Business Strategy",
+      "Operations Management",
+      "Financial Decision-Making",
+      "Leadership & Communication",
     ],
   },
   {
-    degree: "Higher Secondary Certificate (HSC) – Science",
-    institution: "Your College Name",
-    location: "Dhaka, Bangladesh",
-    period: "2019 – 2021",
-    grade: "GPA: 5.00 / 5.00 (A+)",
+    degree: "Bachelor of Pharmacy",
+    institution: "Stamford University",
+    location: "Bangladesh",
+    period: "Completed",
+    grade: "Science Undergraduate Degree",
     description:
-      "Completed higher secondary education with a major in Science, developing strong analytical thinking and mathematical problem-solving skills.",
-    coursework: ["Physics", "Chemistry", "Higher Mathematics", "Information & Communication Tech (ICT)"],
-  },
-  {
-    degree: "Secondary School Certificate (SSC) – Science",
-    institution: "Your High School Name",
-    location: "Dhaka, Bangladesh",
-    period: "2017 – 2019",
-    grade: "GPA: 5.00 / 5.00 (A+)",
-    description:
-      "Graduated secondary school with distinction in Science, establishing foundational curiosity for science and computing.",
-    coursework: ["General Science", "Advanced Mathematics", "Computer Studies"],
+      "Science-first education that built systematic, evidence-based problem solving — now applied to debugging and engineering.",
+    coursework: [
+      "Scientific Method & Research",
+      "Human Physiology",
+      "Analytical Chemistry",
+      "Statistical Analysis",
+    ],
   },
 ];
 
 const certifications = [
   {
-    title: "Complete Web Development Bootcamp (MERN)",
-    issuer: "Online Learning Academy",
-    year: "2024",
-    desc: "Built 10+ real-world applications covering React, Tailwind CSS, Node.js, Express, and MongoDB.",
+    title: "CompTIA A+ Core 1 (220-1001)",
+    issuer: "CompTIA",
+    year: "Certified",
+    desc: "Industry-standard certification covering hardware, troubleshooting, networking, and security fundamentals.",
   },
   {
-    title: "Responsive Web Design Certification",
-    issuer: "freeCodeCamp",
-    year: "2023",
-    desc: "Verified competency in semantic HTML5, modern CSS Grid/Flexbox, and accessible web standards.",
+    title: "City & Guilds Level 2 — ICT Systems & Principles",
+    issuer: "City & Guilds",
+    year: "Certified",
+    desc: "Formal UK qualification in ICT systems, networking, and maintenance principles.",
   },
   {
-    title: "JavaScript Algorithms & Data Structures",
-    issuer: "freeCodeCamp",
-    year: "2024",
-    desc: "Mastery of ES6+, functional programming, OOP in JS, and algorithmic problem-solving.",
+    title: "Cerco IT Systems & Networking",
+    issuer: "Cerco Training",
+    year: "Certified",
+    desc: "Hands-on IT systems and networking training supporting London-based enterprise roles.",
+  },
+  {
+    title: "Full-Stack Development (Self-Directed)",
+    issuer: "Ongoing Track",
+    year: "2025 –",
+    desc: "Structured learning and project building across Next.js, TypeScript, Node, Express, MongoDB, Better Auth — with six deployed apps and active exploration of AI agents.",
   },
 ];
 
@@ -83,7 +82,7 @@ const Education = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-gray-600">
-          My educational journey and professional credentials that built my foundational computer science and engineering mindset.
+          Academic foundations across business and science, professional certifications in IT, and an ongoing full-stack development track.
         </p>
       </div>
 
@@ -92,7 +91,7 @@ const Education = () => {
         <div className="lg:col-span-8 space-y-6">
           <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2 mb-4">
             <FaGraduationCap className="text-blue-600" />
-            <span>Academic Qualifications</span>
+            <span>Degrees</span>
           </h3>
 
           <div className="space-y-6">
@@ -193,10 +192,10 @@ const Education = () => {
             <div className="p-5 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 text-white shadow-md">
               <h4 className="font-bold text-base mb-1">Continuous Learner</h4>
               <p className="text-xs text-blue-100 leading-relaxed mb-3">
-                Always sharpening my problem-solving abilities and keeping updated with modern web standards and React 19 innovations.
+                Currently sharpening TypeScript patterns, authentication, and AI agent development — the same curiosity that turned five years of IT support into full-stack engineering.
               </p>
               <span className="inline-block bg-white/20 backdrop-blur-xs text-white text-xs font-semibold px-3 py-1 rounded-full">
-                Active Code Contributor
+                Actively Building &amp; Deploying
               </span>
             </div>
           </div>

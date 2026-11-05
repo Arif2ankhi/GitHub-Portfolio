@@ -9,71 +9,88 @@ import { FaLaptopCode, FaHandsHelping, FaAward } from "react-icons/fa";
 
 const experiences = [
   {
-    role: "Frontend Developer Trainee / Intern",
-    company: "Software Development Firm / Tech Lab",
-    location: "Dhaka, Bangladesh",
-    period: "Jan 2024 – Jun 2024",
-    type: "Internship / Practical Training",
-    badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
-    responsibilities: [
-      "Engineered reusable and accessible React components according to Figma design specifications.",
-      "Integrated RESTful APIs, handled asynchronous state loading states, and reduced unnecessary re-renders.",
-      "Adopted professional Git workflow (feature branching, clean commit messages, code review PRs).",
-      "Collaborated in Agile sprints with team members to resolve UI bugs and enhance responsiveness.",
-    ],
-    technologies: ["React.js", "Tailwind CSS", "JavaScript ES6+", "Git", "REST APIs"],
-  },
-  {
-    role: "Independent & Freelance Web Developer",
-    company: "Self-Employed / Client Work",
+    role: "Full-Stack Development Track (Self-Directed)",
+    company: "Personal Projects & Deployed Apps",
     location: "Remote",
-    period: "2023 – Present",
-    type: "Freelance & Projects",
+    period: "2025 – Present",
+    type: "Career Transition",
     badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
     responsibilities: [
-      "Designed and deployed responsive web interfaces for multiple clients and personal portfolio initiatives.",
-      "Delivered pixel-perfect mobile-first designs with Tailwind CSS achieving top Lighthouse performance scores.",
-      "Configured automated deployments and DNS hosting setups on Vercel and Netlify.",
-      "Communicated directly with project stakeholders to gather requirements and iterate based on feedback.",
+      "Built and deployed full-stack applications end-to-end: StudioSpace marketplace and Wanderlust travel platform, live on Vercel.",
+      "Implemented complete authentication with Better Auth (JWT plugin, MongoDB adapter) on both client and server.",
+      "Developed Express.js REST APIs with MongoDB Atlas and native driver — routing, validation, and error handling.",
+      "Established a Git/GitHub workflow with separate client/server repos and continuous Vercel deployments.",
     ],
-    technologies: ["React", "HTML5/CSS3", "JavaScript", "Tailwind CSS", "Vercel"],
+    technologies: ["Next.js", "TypeScript", "Express.js", "MongoDB", "Better Auth", "shadcn/ui", "Vercel"],
   },
   {
-    role: "Academic Project Lead & Developer",
-    company: "University Software Lab",
-    location: "Dhaka, Bangladesh",
-    period: "2023 – 2024",
-    type: "Academic & Team Project",
-    badgeColor: "bg-purple-50 text-purple-700 border-purple-200",
+    role: "IT Support Engineer",
+    company: "Shell (via Hemmersbach)",
+    location: "London, UK",
+    period: "Apr 2022 – Present",
+    type: "Enterprise IT",
+    badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
     responsibilities: [
-      "Spearheaded the frontend architecture for a multi-page web portal as part of the academic capstone.",
-      "Coordinated task delegation among 3 team members and conducted internal code walkthroughs.",
-      "Implemented clean form validations, authentication flow, and local state persistence.",
+      "Deliver on-site 1st & 2nd line tech bar, walk-in and desk-side support for Shell's London head office, including VIP and trade-floor users.",
+      "Own the full incident lifecycle in ServiceNow — triage, resolution, or escalation — within SLA with clear hand-over notes.",
+      "Image, configure, and deploy MacBook & Windows laptops, including Intune / Company Portal enrolment and user setup.",
+      "Troubleshoot Apple & Windows devices, Microsoft 365, Outlook, Teams, OneDrive, docking stations, multi-monitor and VPN issues.",
+      "Support iOS/Android, MFA / GlobalProtect Authenticator and secure mobile access in line with enterprise security policy.",
+      "Keep CMDB and asset records accurate — asset tagging, inventory, secure disk wiping, and hardware replacement.",
     ],
-    technologies: ["JavaScript", "Bootstrap 5", "Node.js Basics", "Database Systems"],
+    technologies: ["ServiceNow", "Intune/MDM", "Microsoft 365", "Active Directory", "macOS", "Windows 11"],
+  },
+  {
+    role: "Trade Floor IT Support Engineer",
+    company: "BP",
+    location: "London, UK",
+    period: "Sep 2021 – Mar 2022",
+    type: "Enterprise IT",
+    badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
+    responsibilities: [
+      "Provided rapid desk-side support to traders and executives, prioritising time-critical incidents to minimise disruption to trading.",
+      "Administered Active Directory accounts, password resets, OUs and permissions; supported Intune device enrolment.",
+      "Supported workstation deployments, office moves, network cabling, docking stations, hardware installs and AV for meetings.",
+      "Updated ServiceNow incidents, requests and CMDB / asset records during support, hardware refresh and software deployments.",
+    ],
+    technologies: ["Active Directory", "Intune/MDM", "ServiceNow", "Windows 10/11", "Networking"],
+  },
+  {
+    role: "IT Helpdesk Analyst (Intern)",
+    company: "Twin Group",
+    location: "London, UK",
+    period: "Sep 2020 – Feb 2021",
+    type: "Enterprise IT",
+    badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
+    responsibilities: [
+      "Delivered 1st line remote and on-site support: logged issues, troubleshot problems, and escalated to 2nd/3rd line where required.",
+      "Created and managed Active Directory accounts, security groups and mailbox permissions; supported Windows application deployment.",
+      "Implemented BitLocker encryption via Group Policy and installed endpoint protection and remote-support software.",
+    ],
+    technologies: ["Active Directory", "BitLocker", "Group Policy", "Windows", "O365"],
   },
 ];
 
 const valueProps = [
   {
     icon: FaLaptopCode,
-    title: "Rapid Onboarding",
-    desc: "Solid foundational knowledge in React 19, modern JavaScript, and Git ensures minimal ramp-up time.",
+    title: "Builds the Whole Stack",
+    desc: "Next.js + TypeScript clients, Express + MongoDB APIs, Better Auth sessions — deployed on Vercel, links you can click right now.",
   },
   {
     icon: HiOutlineSparkles,
-    title: "High Energy & Drive",
-    desc: "Passionate about writing clean code, actively taking feedback, and solving complex problems with enthusiasm.",
+    title: "Enterprise Reliability",
+    desc: "Five years of SLA-driven, incident-first work at Shell and BP means disciplined commits, clear documentation, and calm debugging.",
   },
   {
     icon: FaHandsHelping,
-    title: "Team Player",
-    desc: "Thrives in collaborative environments with respectful communication and strong empathy for peers.",
+    title: "Executive-Level Communication",
+    desc: "Accustomed to supporting VIPs and trade-floor users — short, precise, and jargon-free updates for any audience.",
   },
   {
     icon: FaAward,
-    title: "Modern Best Practices",
-    desc: "Trained on the latest tools (Vite, Tailwind v4, Component-driven design) with zero outdated baggage.",
+    title: "Security-Aware by Habit",
+    desc: "BitLocker, MFA, conditional access, and secure asset handling are second nature — they now inform how I design auth flows.",
   },
 ];
 
@@ -92,7 +109,7 @@ const Experience = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-gray-600">
-          My practical internships, freelance endeavors, and collaborative project experience demonstrating hands-on readiness.
+          Five years of enterprise IT at Shell &amp; BP, now building the web instead of supporting it — with deployed full-stack projects to match.
         </p>
       </div>
 
@@ -160,10 +177,10 @@ const Experience = () => {
       <div className="max-w-4xl mx-auto bg-white rounded-2xl border border-blue-200/80 p-8 shadow-sm">
         <div className="text-center max-w-xl mx-auto mb-8 space-y-1">
           <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-            Why Hire Me as a Fresher Developer?
+            Why Bring Me Onto Your Team?
           </h3>
           <p className="text-sm text-gray-500">
-            What I bring to your engineering team from day one.
+            What five years in enterprise tech plus a self-driven full-stack transition bring from day one.
           </p>
         </div>
 

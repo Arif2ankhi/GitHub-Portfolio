@@ -123,7 +123,7 @@ const Projects = () => {
         <p className="text-sm text-gray-500">
           Want to see more code and experiments? Check out my{" "}
           <a
-            href="https://github.com/"
+            href="https://github.com/Arif2ankhi"
             target="_blank"
             rel="noreferrer"
             className="font-semibold text-blue-600 hover:underline inline-flex items-center gap-1"

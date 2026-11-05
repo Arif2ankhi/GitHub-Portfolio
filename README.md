@@ -1,24 +1,30 @@
-# practice-portfolio-ejp-14
+# Md Arif Hossin — Developer Portfolio
 
-A modern, responsive personal developer portfolio web application built with **React 19**, **Vite**, and **Tailwind CSS v4**.
+A modern, responsive personal web developer portfolio for **Md Arif Hossin**, a London-based **Full-Stack Web Developer** building complete applications with **Next.js**, **TypeScript**, **Node.js / Express**, **MongoDB**, and **Better Auth**.
 
 ## ✨ Features
-- **Hero Section**: Introduces a Fresher Web Developer with status badge, stack pills, and interactive developer profile code card.
+- **Hero Section**: Professional introduction with status badge, real tech stack, and interactive developer code card.
 - **Interactive Resume (`/resume`)**: Full, ATS-friendly printable resume with Print/Save as PDF functionality.
-- **Featured Projects**: Showcase cards with preview screenshots, tech stack pills, direct details view, and live demo / GitHub links.
-- **Dynamic Project Details (`/projects/:id`)**: Comprehensive deep dive pages for individual projects with challenge breakdowns and future roadmaps.
-- **Skills Matrix**: Categorized technical stack (Frontend, Backend & DB basics, Tools & Deployment) with interactive filter tabs.
-- **Academic & Experience History**: Timeline of formal education, certifications, and hands-on web development experience.
-- **Contact & Direct Messaging**: Contact information cards and interactive messaging form.
-- **Modern Responsive Design**: Smooth scroll spy navigation, mobile drawer menu, and clean footer with back-to-top button.
+- **Featured Projects**: Six real projects with live Vercel demos and client/server repos — StudioSpace, Wanderlust, Fit-Log, Book-Vibe, Bangla News 24, and CRUD Connect.
+- **Dynamic Project Details (`/projects/:id`)**: Deep-dive pages with challenges & solutions and future roadmaps.
+- **Skills Matrix**: Categorized technical stack (Frontend, Backend & Auth, Tools & Deployment) with interactive filter tabs.
+- **Professional History**: Enterprise IT engineering career at Shell & BP, degrees, and CompTIA certifications.
+- **Contact**: Real contact details, GitHub/LinkedIn links, and a working mailto-powered message form.
+- **Modern Responsive Design**: Scroll-spy navigation, mobile drawer menu, and clean footer with back-to-top.
 
-## 🚀 Tech Stack
+## 🔗 Links
+- **LinkedIn**: https://www.linkedin.com/in/md-arif-hossin-9086a239/
+- **GitHub**: https://github.com/Arif2ankhi
+- **Email**: arif2ankhi@gmail.com
+
+## 🛠️ Tech Stack
 - **Frontend**: React 19, JavaScript (ES6+), React Router v7
 - **Styling**: Tailwind CSS v4
 - **Icons**: React Icons
 - **Bundler**: Vite
+- **Linting**: Oxlint
 
-## 🛠️ Local Development
+## 🚀 Local Development
 ```bash
 # Navigate to the frontend directory
 cd frontend
@@ -28,4 +34,12 @@ npm install
 
 # Start local development server
 npm run dev
+
+# Other scripts
+npm run build    # production build
+npm run lint     # oxlint
+npm run preview  # preview production build
 ```
+
+## 📦 Deployment
+The production build deploys cleanly to **Vercel**, **Netlify**, or any static host. For SPA deep-link routing (`/resume`, `/projects/:id`), configure all routes to fall back to `index.html`.
