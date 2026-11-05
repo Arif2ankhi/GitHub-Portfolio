@@ -13,6 +13,8 @@ A modern, responsive personal web developer portfolio for **Md Arif Hossin**, a 
 - **Modern Responsive Design**: Scroll-spy navigation, mobile drawer menu, and clean footer with back-to-top.
 
 ## 🔗 Links
+## Live link : https://frontend-five-taupe-36.vercel.app/
+
 - **LinkedIn**: https://www.linkedin.com/in/md-arif-hossin-9086a239/
 - **GitHub**: https://github.com/Arif2ankhi
 - **Email**: arif2ankhi@gmail.com
@@ -43,3 +45,6 @@ npm run preview  # preview production build
 
 ## 📦 Deployment
 The production build deploys cleanly to **Vercel**, **Netlify**, or any static host. For SPA deep-link routing (`/resume`, `/projects/:id`), configure all routes to fall back to `index.html`.
+
+
+<!-- PS C:\Projects\GitHub Portfolio> git init -->
