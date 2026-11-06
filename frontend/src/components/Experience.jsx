@@ -25,7 +25,7 @@ const experiences = [
   },
   {
     role: "IT Support Engineer",
-    company: "Shell (via Hemmersbach)",
+    company: "Shell",
     location: "London, UK",
     period: "Apr 2022 – Present",
     type: "Enterprise IT",
