@@ -13,8 +13,8 @@ A modern, responsive personal web developer portfolio for **Md Arif Hossin**, a 
 - **Modern Responsive Design**: Scroll-spy navigation, mobile drawer menu, and clean footer with back-to-top.
 
 ## 🔗 Links
-## Live link : https://frontend-five-taupe-36.vercel.app/
 
+- **Live portfolio**: https://frontend-five-taupe-36.vercel.app/
 - **LinkedIn**: https://www.linkedin.com/in/md-arif-hossin-9086a239/
 - **GitHub**: https://github.com/Arif2ankhi
 - **Email**: arif2ankhi@gmail.com
