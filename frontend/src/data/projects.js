@@ -4,8 +4,39 @@ import fitlog from "../assets/projects/fitlog.svg";
 import bookvibe from "../assets/projects/bookvibe.svg";
 import banglanews from "../assets/projects/banglanews.svg";
 import crudConnect from "../assets/projects/crud-connect.svg";
+import salonbook from "../assets/projects/salonbook.svg";
 
 const projects = [
+  {
+    id: 7,
+    title: "SalonBook — Salon Appointment & Service Booking Platform",
+    image: salonbook,
+    category: "Full-Stack Booking Platform",
+    technologies: [
+      "Next.js 16",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Better Auth + JWT",
+      "Stripe Checkout",
+      "Express + MongoDB",
+    ],
+    description:
+      "A full-stack, role-based salon service and appointment booking platform. Customers browse active treatments, book appointments by date and time slot, manage their requests, and pay securely for confirmed sessions via Stripe. Admins run a dedicated studio dashboard to manage services, confirm or cancel bookings, oversee customers, and track verified payment transactions.",
+    live: "https://salonbook-client-gules.vercel.app",
+    github: "https://github.com/Arif2ankhi/SalonBook-Client",
+    backend: "https://github.com/Arif2ankhi/salonbook-server",
+    challenges: [
+      "Enforcing role-based access and server-side status rules so customers can only request appointments while admins confirm, cancel, or block with validated transitions.",
+      "Building a Stripe Checkout flow with signature-verified webhooks so only verified payments enter the transaction ledger.",
+      "Designing two dashboards (customer & admin) from shared components — StatCard, StatusBadge, ProfileForm — with real-time studio metrics and filterable appointment views.",
+      "Keeping public catalog, booking lifecycle, and profile updates (ImgBB uploads) in sync across the Next.js client and the Express + MongoDB API.",
+    ],
+    future: [
+      "Automated email/SMS reminders for pending and confirmed appointments.",
+      "Specialist schedules with per-staff availability and calendar booking.",
+      "Loyalty rewards and repeat-visit discounts for returning customers.",
+    ],
+  },
   {
     id: 1,
     title: "StudioSpace — Studio Booking Marketplace",

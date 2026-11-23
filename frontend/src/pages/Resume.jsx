@@ -177,6 +177,45 @@ const Resume = () => {
 
           <div className="space-y-4">
             {/* Project 1 */}
+            <div className="border-l-2 border-rose-600 pl-4 py-0.5">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
+                  SalonBook — Salon Appointment &amp; Service Booking Platform
+                  <span className="text-xs font-normal text-rose-600 font-mono bg-rose-50 px-2 py-0.5 rounded">
+                    Full-Stack
+                  </span>
+                </h3>
+                <div className="flex items-center gap-3 text-xs font-semibold text-rose-600">
+                  <a href="https://salonbook-client-gules.vercel.app" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                    Live <HiExternalLink />
+                  </a>
+                  <span>•</span>
+                  <a href="https://github.com/Arif2ankhi/SalonBook-Client" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                    Client Repo <HiExternalLink />
+                  </a>
+                  <span>•</span>
+                  <a href="https://github.com/Arif2ankhi/salonbook-server" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                    Server Repo <HiExternalLink />
+                  </a>
+                </div>
+              </div>
+              <p className="text-xs text-gray-500 font-medium mt-0.5">
+                Tech: Next.js 16 (App Router), TypeScript, Tailwind CSS v4, shadcn/ui, Better Auth + JWT, Stripe Checkout, Express.js, MongoDB (native driver)
+              </p>
+              <ul className="mt-2 list-disc list-inside text-xs sm:text-sm text-gray-700 space-y-1">
+                <li>
+                  Built a role-based booking platform where customers search and filter active treatments, request appointments by date and time slot, and manage their bookings.
+                </li>
+                <li>
+                  Integrated Stripe Checkout with signature-verified webhooks so only verified payments appear in the admin transaction ledger.
+                </li>
+                <li>
+                  Delivered an admin studio dashboard with live metrics, service management (ImgBB hosting), appointment confirm/cancel guards, and customer Active/Blocked controls.
+                </li>
+              </ul>
+            </div>
+
+            {/* Project 2 */}
             <div className="border-l-2 border-blue-600 pl-4 py-0.5">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                 <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
@@ -215,7 +254,7 @@ const Resume = () => {
               </ul>
             </div>
 
-            {/* Project 2 */}
+            {/* Project 3 */}
             <div className="border-l-2 border-indigo-600 pl-4 py-0.5">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                 <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
@@ -254,7 +293,7 @@ const Resume = () => {
               </ul>
             </div>
 
-            {/* Project 3 */}
+            {/* Project 4 */}
             <div className="border-l-2 border-emerald-600 pl-4 py-0.5">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                 <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
@@ -286,7 +325,7 @@ const Resume = () => {
               </ul>
             </div>
 
-            {/* Project 4 */}
+            {/* Project 5 */}
             <div className="border-l-2 border-cyan-600 pl-4 py-0.5">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                 <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
